@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registros de Diagnósticos</title>
+</head>
+<body>
+    <h1>Diagnósticos Reproductivos / Reproductive Diagnoses</h1>
+    <a href="/registro">Nuevo Registro / New Record</a>
+    <ul>
+    {% for reg in registros %}
+        <li>{{ reg.fecha }} - {{ reg.animal_id }} - {{ reg.diagnostico }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
